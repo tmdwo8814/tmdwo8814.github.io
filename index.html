@@ -60,12 +60,34 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr bgcolor="#ffffd0">
+          <tr onmouseover="plugtrack_start()" onmouseout="plugtrack_stop()" bgcolor="#ffffd0">
             <td style="padding:16px;width:20%;vertical-align:middle">
-              <img src="images/plugtrack_image.png"
-                  alt="plugtrack"
-                  width="160"
-                  style="border-style:none">
+              <div class="one">
+                <!-- 마우스를 올렸을 때 보이는 영상 -->
+                <div class="two" id="plugtrack_image">
+                  <video width="160" height="160" muted autoplay loop>
+                    <source src="images/plugtrack/dancetrack0004 - Trim.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <!-- 기본으로 보이는 이미지 -->
+                <img src="images/plugtrack/DanceTrack_0004_530frame.jpg"
+                    alt="plugtrack"
+                    width="160"
+                    height="160"
+                    style="border-style:none">
+              </div>
+
+              <script type="text/javascript">
+                function plugtrack_start() {
+                  document.getElementById('plugtrack_image').style.opacity = "1";
+                }
+
+                function plugtrack_stop() {
+                  document.getElementById('plugtrack_image').style.opacity = "0";
+                }
+                plugtrack_stop();  // 처음에는 이미지만 보이게
+              </script>
             </td>
 
             <td style="padding:8px;width:80%;vertical-align:middle">
