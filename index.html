@@ -59,59 +59,62 @@
           </tr>
         </tbody></table>
 
-        <tr onmouseover="plugtrack_start()" onmouseout="plugtrack_stop()" bgcolor="#ffffd0">
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <div class="one" style="width:160px; height:160px; position:relative;">
-              <div class="two" id="plugtrack_image"
-                  style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0;">
-                <video muted autoplay loop playsinline
-                      style="width:100%; height:100%; object-fit:cover; display:block;">
-                  <source src="images/plugtrack/dancetrack0004-Trim.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseover="plugtrack_start()" onmouseout="plugtrack_stop()" bgcolor="#ffffd0">
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one" style="width:160px; height:160px; position:relative;">
+                <!-- hover 시 보이는 영상 -->
+                <div class="two" id="plugtrack_image"
+                    style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0;">
+                  <video muted autoplay loop playsinline
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <source src="images/plugtrack/dancetrack0004-Trim.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+                <!-- 기본으로 보이는 이미지 -->
+                <img src="images/plugtrack/DanceTrack_0004_530frame.jpg"
+                    alt="plugtrack"
+                    style="width:100%; height:100%; object-fit:cover; display:block; border-style:none;">
               </div>
 
-              <img src="images/plugtrack/DanceTrack_0004_530frame.jpg"
-                  alt="plugtrack"
-                  style="width:100%; height:100%; object-fit:cover; display:block; border-style:none;">
-            </div>
+              <script type="text/javascript">
+                function plugtrack_start() {
+                  document.getElementById('plugtrack_image').style.opacity = "1";
+                }
 
-            <script type="text/javascript">
-              function plugtrack_start() {
-                document.getElementById('plugtrack_image').style.opacity = "1";
-              }
+                function plugtrack_stop() {
+                  document.getElementById('plugtrack_image').style.opacity = "0";
+                }
+                plugtrack_stop();
+              </script>
+            </td>
 
-              function plugtrack_stop() {
-                document.getElementById('plugtrack_image').style.opacity = "0";
-              }
-              plugtrack_stop();
-            </script>
-          </td>
-
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2511.13105">
-              <span class="papertitle">
-                PlugTrack: Multi-Perceptive Motion Analysis for Adaptive Fusion in Multi-Object Tracking
-              </span>
-            </a>
-            <br>
-            <strong>Seungjae Kim</strong>,
-            <a href="https://my.surfit.io/w/1720083748">SeungJoon Lee</a>,
-            <a href="https://myeongahcho.netlify.app/">MyeongAh Cho</a>
-            <br>
-            <em>AAAI</em>, 2026
-            <strong style="color:#ff0000">(Acceptance rate: 17.6%)</strong>
-            <br>
-            <a href="https://arxiv.org/abs/2511.13105">arXiv</a> /
-            <a href="https://github.com/VisualScienceLab-KHU/PlugTrack">code</a>
-            <p></p>
-            <p>
-              PlugTrack is a plug-and-play motion prediction framework that adaptively fuses Kalman filter
-              and data-driven motion predictors for robust multi-object tracking.
-            </p>
-          </td>
-        </tr>
-
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2511.13105">
+                <span class="papertitle">
+                  PlugTrack: Multi-Perceptive Motion Analysis for Adaptive Fusion in Multi-Object Tracking
+                </span>
+              </a>
+              <br>
+              <strong>Seungjae Kim</strong>,
+              <a href="https://my.surfit.io/w/1720083748">SeungJoon Lee</a>,
+              <a href="https://myeongahcho.netlify.app/">MyeongAh Cho</a>
+              <br>
+              <em>AAAI</em>, 2026
+              <strong style="color:#ff0000">(Acceptance rate: 17.6%)</strong>
+              <br>
+              <a href="https://arxiv.org/abs/2511.13105">arXiv</a> /
+              <a href="https://github.com/VisualScienceLab-KHU/PlugTrack">code</a>
+              <p></p>
+              <p>
+                PlugTrack is a plug-and-play motion prediction framework that adaptively fuses Kalman filter
+                and data-driven motion predictors for robust multi-object tracking.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
