@@ -482,9 +482,20 @@
     /* ═══ RESPONSIVE ═══ */
     @media (max-width: 680px) {
       .wrap { padding: 0 20px; }
+      .wrap table, .wrap tbody, .wrap tr, .wrap td {
+        display: block;
+        width: 100%;
+      }
       .name { font-size: 30px; }
-      .photo-cell { padding-left: 0; padding-top: 12px; }
-      .photo-wrap { width: 140px; }
+      .photo-cell {
+        padding-left: 0;
+        padding-top: 20px;
+        text-align: center;
+      }
+      .photo-wrap {
+        width: 140px;
+        margin: 0 auto;
+      }
       .paper { flex-direction: column; gap: 16px; padding: 20px; }
       .paper-thumb-wrap { width: 100%; height: 180px; }
       .keywords span { font-size: 11px; padding: 3px 10px; }
