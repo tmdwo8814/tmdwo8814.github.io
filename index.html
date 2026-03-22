@@ -261,21 +261,23 @@
     }
     .links-row a {
       font-family: var(--mono);
-      font-size: 12px;
-      font-weight: 500;
-      color: var(--white);
-      background: var(--accent);
-      padding: 5px 16px;
-      border-radius: 3px;
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--gray-3);
       letter-spacing: -0.01em;
-      transition: all 0.2s ease;
+      position: relative;
+      padding-bottom: 2px;
     }
     .links-row a::after {
-      display: none;
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 1.5px;
+      background: var(--accent);
+      transition: width 0.25s ease;
     }
     .links-row a:hover {
-      background: var(--accent-hover);
-      color: var(--white);
+      color: var(--accent);
     }
     .links-row a:hover::after {
       width: 100%;
@@ -507,9 +509,9 @@
             reconstruct dynamic 3D environments.
           </p>
           <div class="keywords">
-            <span>Multi-Object Tracking</span>
-            <span>3D Object Detection</span>
-            <span>Few-Shot Detection</span>
+            <span>Video Understanding</span>
+            <span>2D/3D Perception</span>
+            <span>Novel View Synthesis</span>
           </div>
           <div class="links-row">
             <a href="mailto:tmdwo8814@gmail.com">email</a>
