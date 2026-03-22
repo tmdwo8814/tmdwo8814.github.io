@@ -1,3 +1,4 @@
+<!-- 
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
@@ -34,7 +35,7 @@
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:tmdwo8814@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/CV__SeungJae_Kim (2).pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="data/CV (7).pdf">CV</a> &nbsp;/&nbsp;
                   <a href="https://github.com/tmdwo8814/">Github</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?hl=ko&user=53NSJQUAAAAJ">Google Scholar</a>
                 </p>
@@ -70,7 +71,6 @@
           <tr onmouseover="plugtrack_start()" onmouseout="plugtrack_stop()" bgcolor="#ffffd0">
             <td style="padding:16px;width:20%;vertical-align:middle">
               <div class="one" style="width:160px; height:160px; position:relative;">
-                <!-- hover 시 보이는 영상 -->
                 <div class="two" id="plugtrack_image"
                     style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0;">
                   <video muted autoplay loop playsinline
@@ -80,7 +80,6 @@
                   </video>
                 </div>
 
-                <!-- 기본으로 보이는 이미지 -->
                 <img src="images/plugtrack/DanceTrack_0004_530frame.jpg"
                     alt="plugtrack"
                     style="width:100%; height:100%; object-fit:cover; display:block; border-style:none;">
@@ -136,4 +135,453 @@
       </tr>
     </table>
   </body>
+</html>
+-->
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Seungjae Kim</title>
+  <meta name="author" content="Seungjae Kim">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./images/logo/khu_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --gray-1: #111111;
+      --gray-2: #444444;
+      --gray-3: #888888;
+      --gray-4: #BBBBBB;
+      --gray-5: #E0E0E0;
+      --gray-6: #F5F5F5;
+      --sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      --mono: 'IBM Plex Mono', 'SF Mono', 'Consolas', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--white);
+      color: var(--gray-1);
+      font-size: 15px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      color: var(--gray-1);
+      text-decoration: none;
+      border-bottom: 1px solid var(--gray-4);
+      transition: border-color 0.2s ease;
+    }
+    a:hover {
+      border-color: var(--black);
+    }
+
+    ::selection {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    table { border: 0; border-spacing: 0; border-collapse: separate; }
+
+    /* ═══ CONTAINER ═══ */
+    .wrap {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* ═══ NAME ═══ */
+    .name {
+      font-family: var(--sans);
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      text-align: left;
+      color: var(--black);
+      line-height: 1.1;
+    }
+
+    /* ═══ BIO ═══ */
+    .bio {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--gray-2);
+      font-weight: 400;
+      margin-top: 16px;
+    }
+
+    /* ═══ KEYWORDS ═══ */
+    .keywords {
+      margin-top: 16px;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--gray-3);
+      letter-spacing: -0.01em;
+      line-height: 2;
+    }
+    .keywords span {
+      display: inline-block;
+      border: 1px solid var(--gray-5);
+      padding: 3px 12px;
+      border-radius: 3px;
+      margin-right: 6px;
+      margin-bottom: 4px;
+      transition: all 0.2s ease;
+    }
+    .keywords span:hover {
+      border-color: var(--black);
+      color: var(--black);
+    }
+
+    /* ═══ LINKS ROW ═══ */
+    .links-row {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .links-row a {
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--gray-3);
+      border-bottom: 1px solid transparent;
+      letter-spacing: -0.01em;
+      transition: all 0.2s ease;
+    }
+    .links-row a:hover {
+      color: var(--black);
+      border-color: var(--black);
+    }
+
+    /* ═══ PHOTO ═══ */
+    .photo-cell {
+      padding-left: 40px;
+    }
+    .photo {
+      width: 100%;
+      max-width: 180px;
+      aspect-ratio: 1;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(100%);
+      transition: filter 0.4s ease;
+    }
+    .photo:hover {
+      filter: grayscale(0%);
+    }
+
+    /* ═══ DIVIDER ═══ */
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: var(--gray-5);
+      margin: 0;
+    }
+
+    /* ═══ SECTION LABEL ═══ */
+    .section-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray-4);
+    }
+
+    /* ═══ NEWS ═══ */
+    .news-line {
+      display: flex;
+      gap: 20px;
+      align-items: baseline;
+      padding: 6px 0;
+    }
+    .news-when {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--gray-4);
+      flex-shrink: 0;
+      min-width: 72px;
+    }
+    .news-what {
+      font-size: 14px;
+      color: var(--gray-2);
+    }
+    .news-what strong {
+      font-weight: 600;
+      color: var(--gray-1);
+    }
+    .news-what .acc {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--gray-3);
+      margin-left: 4px;
+    }
+
+    /* ═══ PAPER ═══ */
+    .paper {
+      display: flex;
+      gap: 24px;
+      padding: 24px 0;
+    }
+
+    .paper-thumb-wrap {
+      flex-shrink: 0;
+      width: 180px;
+      height: 135px;
+      position: relative;
+      overflow: hidden;
+      background: var(--gray-6);
+    }
+    .paper-thumb-wrap img,
+    .paper-thumb-wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .paper-thumb-wrap .vid-layer {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .paper-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .paper-body .p-title {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.4;
+      letter-spacing: -0.02em;
+      color: var(--black);
+    }
+    .paper-body .p-title a {
+      color: var(--black);
+      border: none;
+    }
+    .paper-body .p-title a:hover {
+      border-bottom: 1px solid var(--black);
+    }
+
+    .paper-body .p-authors {
+      font-size: 13px;
+      color: var(--gray-3);
+      line-height: 1.5;
+    }
+    .paper-body .p-authors .me {
+      color: var(--gray-1);
+      font-weight: 600;
+    }
+    .paper-body .p-authors a {
+      color: var(--gray-3);
+      border: none;
+    }
+    .paper-body .p-authors a:hover {
+      color: var(--gray-1);
+    }
+
+    .paper-body .p-venue {
+      font-size: 13px;
+      color: var(--gray-3);
+    }
+    .paper-body .p-venue strong {
+      color: var(--gray-1);
+      font-weight: 600;
+    }
+
+    .paper-body .p-links {
+      display: flex;
+      gap: 16px;
+      margin-top: 6px;
+    }
+    .paper-body .p-links a {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--gray-3);
+      border-bottom: 1px solid var(--gray-5);
+      transition: all 0.2s ease;
+    }
+    .paper-body .p-links a:hover {
+      color: var(--black);
+      border-color: var(--black);
+    }
+
+    .paper-body .p-desc {
+      font-size: 13px;
+      color: var(--gray-3);
+      line-height: 1.6;
+      margin-top: 4px;
+    }
+    .paper-body .p-desc strong {
+      color: var(--gray-2);
+      font-weight: 500;
+    }
+
+    /* ═══ FOOTER ═══ */
+    .foot {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--gray-4);
+      text-align: right;
+      padding: 40px 0 48px;
+    }
+    .foot a {
+      color: var(--gray-4);
+      border: none;
+    }
+    .foot a:hover { color: var(--gray-2); }
+
+    /* ═══ RESPONSIVE ═══ */
+    @media (max-width: 680px) {
+      .wrap { padding: 0 20px; }
+      .name { font-size: 26px; }
+      .photo-cell { padding-left: 0; padding-top: 8px; }
+      .photo { max-width: 140px; }
+      .paper { flex-direction: column; gap: 16px; }
+      .paper-thumb-wrap { width: 100%; height: 180px; }
+      .keywords span { font-size: 11px; padding: 2px 9px; }
+    }
+  </style>
+</head>
+
+<body>
+  <table class="wrap"><tbody><tr><td style="padding:0">
+
+    <!-- ════════ HERO ════════ -->
+    <table style="width:100%"><tbody>
+      <tr>
+        <td style="padding:72px 0 0;vertical-align:top">
+          <p class="name">Seungjae Kim</p>
+          <p class="bio">
+            M.S. candidate at
+            <a href="https://vslab.khu.ac.kr/">Visual Science Lab</a>,
+            Kyung Hee University, advised by
+            <a href="https://myeongahcho.netlify.app/">Prof. MyeongAh Cho</a>.<br>
+            I build robust visual perception systems that track, detect, and
+            reconstruct dynamic 3D environments.
+          </p>
+          <div class="keywords">
+            <span>Multi-Object Tracking</span>
+            <span>3D Object Detection</span>
+            <span>Few-Shot Detection</span>
+          </div>
+          <div class="links-row">
+            <a href="mailto:tmdwo8814@gmail.com">email</a>
+            <a href="data/CV (7).pdf">cv</a>
+            <a href="https://github.com/tmdwo8814/">github</a>
+            <a href="https://scholar.google.com/citations?hl=ko&user=53NSJQUAAAAJ">scholar</a>
+          </div>
+        </td>
+        <td style="padding:72px 0 0;vertical-align:top" class="photo-cell">
+          <a href="./images/profile/seungjae.jpg">
+            <img class="photo" alt="Seungjae Kim" src="./images/profile/seungjae.jpg">
+          </a>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <!-- ════════ NEWS ════════ -->
+    <div style="padding-top:56px">
+      <div class="divider"></div>
+      <table style="width:100%"><tbody>
+        <tr>
+          <td style="padding:24px 0 20px;">
+            <p class="section-label">News</p>
+            <div style="margin-top:12px">
+              <div class="news-line">
+                <span class="news-when">2026.02</span>
+                <span class="news-what">
+                  🏆 <strong>Best Presentation Award</strong> at KSC 2025
+                </span>
+              </div>
+              <div class="news-line">
+                <span class="news-when">2025.11</span>
+                <span class="news-what">
+                  Paper accepted at <strong>AAAI 2026</strong>
+                  <span class="acc">(17.6%)</span>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+
+    <!-- ════════ PUBLICATIONS ════════ -->
+    <div>
+      <div class="divider"></div>
+      <div style="padding:24px 0 0;">
+        <p class="section-label">Publications</p>
+      </div>
+
+      <!-- PlugTrack -->
+      <div class="paper" onmouseover="plugtrack_start()" onmouseout="plugtrack_stop()">
+        <div class="paper-thumb-wrap">
+          <div class="vid-layer" id="plugtrack_image">
+            <video muted autoplay loop playsinline style="width:100%;height:100%;object-fit:cover;">
+              <source src="images/plugtrack/dancetrack0004-Trim.mp4" type="video/mp4">
+            </video>
+          </div>
+          <img src="images/plugtrack/DanceTrack_0004_530frame.jpg" alt="PlugTrack">
+        </div>
+        <div class="paper-body">
+          <div class="p-title">
+            <a href="https://arxiv.org/abs/2511.13105">
+              PlugTrack: Multi-Perceptive Motion Analysis for Adaptive Fusion in Multi-Object Tracking
+            </a>
+          </div>
+          <div class="p-authors">
+            <span class="me">Seungjae Kim</span>,
+            <a href="https://my.surfit.io/w/1720083748">SeungJoon Lee</a>,
+            <a href="https://myeongahcho.netlify.app/">MyeongAh Cho</a>
+          </div>
+          <div class="p-venue"><strong>AAAI</strong>, 2026</div>
+          <div class="p-links">
+            <a href="https://arxiv.org/abs/2511.13105">arXiv</a>
+            <a href="https://github.com/VisualScienceLab-KHU/PlugTrack">code</a>
+          </div>
+          <p class="p-desc">
+            A plug-and-play motion prediction framework that adaptively fuses Kalman filter
+            and <strong>any</strong> data-driven motion predictors for robust multi-object tracking.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ FOOTER ════════ -->
+    <div class="divider"></div>
+    <div class="foot">
+      Based on <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>
+    </div>
+
+  </td></tr></tbody></table>
+
+  <script>
+    function plugtrack_start() {
+      document.getElementById('plugtrack_image').style.opacity = "1";
+    }
+    function plugtrack_stop() {
+      document.getElementById('plugtrack_image').style.opacity = "0";
+    }
+    plugtrack_stop();
+  </script>
+</body>
 </html>
