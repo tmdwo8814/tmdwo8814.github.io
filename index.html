@@ -220,7 +220,10 @@
     }
     .bio a {
       color: var(--accent);
-      border-bottom: 1px solid transparent;
+      border-bottom: 1px solid var(--accent);
+    }
+    .bio a:hover {
+      border-bottom-color: transparent;
     }
     .bio a:hover {
       border-bottom-color: var(--accent);
@@ -258,23 +261,21 @@
     }
     .links-row a {
       font-family: var(--mono);
-      font-size: 13px;
-      font-weight: 400;
-      color: var(--gray-3);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--white);
+      background: var(--accent);
+      padding: 5px 16px;
+      border-radius: 3px;
       letter-spacing: -0.01em;
-      position: relative;
-      padding-bottom: 2px;
+      transition: all 0.2s ease;
     }
     .links-row a::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0;
-      width: 0; height: 1.5px;
-      background: var(--accent);
-      transition: width 0.25s ease;
+      display: none;
     }
     .links-row a:hover {
-      color: var(--accent);
+      background: var(--accent-hover);
+      color: var(--white);
     }
     .links-row a:hover::after {
       width: 100%;
@@ -498,7 +499,7 @@
         <td style="padding:72px 0 0;vertical-align:top">
           <p class="name">Seungjae Kim</p>
           <p class="bio">
-            M.S. candidate at
+            I am a M.S. candidate at
             <a href="https://vslab.khu.ac.kr/">Visual Science Lab</a>,
             Kyung Hee University, advised by
             <a href="https://myeongahcho.netlify.app/">Prof. MyeongAh Cho</a>.<br>
@@ -573,7 +574,7 @@
         </div>
         <div class="paper-body">
           <div class="p-title">
-            <a href="https://arxiv.org/abs/2511.13105">
+            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/37491">
               PlugTrack: Multi-Perceptive Motion Analysis for Adaptive Fusion in Multi-Object Tracking
             </a>
           </div>
@@ -586,6 +587,7 @@
           <div class="p-links">
             <a href="https://arxiv.org/abs/2511.13105">arXiv</a>
             <a href="https://github.com/VisualScienceLab-KHU/PlugTrack">code</a>
+            <a href="https://visualsciencelab-khu.github.io/PlugTrack_project/">project page</a>
           </div>
           <p class="p-desc">
             A plug-and-play motion prediction framework that adaptively fuses Kalman filter
