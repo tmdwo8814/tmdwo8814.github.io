@@ -515,6 +515,197 @@
       color: var(--accent);
     }
 
+    /* Compact desktop layout — mobile sizing remains unchanged */
+    @media (min-width: 801px) {
+      body {
+        font-size: 13px;
+      }
+
+      .site-shell {
+        width: min(calc(100% - 64px), 760px);
+        padding: 34px 0 28px;
+      }
+
+      .hero {
+        grid-template-columns: minmax(0, 1fr) 150px;
+        gap: 36px;
+        padding: 34px;
+        border-radius: 22px;
+      }
+
+      .hero::before {
+        left: 34px;
+        width: 54px;
+        height: 4px;
+      }
+
+      .name {
+        font-size: 38px;
+      }
+
+      .bio {
+        max-width: 480px;
+        margin-top: 16px;
+        font-size: 13px;
+        line-height: 1.7;
+      }
+
+      .keywords {
+        gap: 6px;
+        margin-top: 16px;
+      }
+
+      .keywords span {
+        padding: 4px 9px;
+        font-size: 9px;
+      }
+
+      .links-row {
+        gap: 7px;
+        margin-top: 20px;
+      }
+
+      .social-link {
+        gap: 6px;
+        min-height: 32px;
+        padding: 6px 10px;
+        border-radius: 8px;
+        font-size: 9px;
+      }
+
+      .social-link svg {
+        width: 13px;
+        height: 13px;
+      }
+
+      .photo-wrap {
+        width: 150px;
+        border-radius: 15px;
+        box-shadow: 0 12px 28px rgba(31, 71, 61, 0.10);
+      }
+
+      .photo {
+        border-radius: 10px;
+      }
+
+      .section {
+        margin-top: 36px;
+      }
+
+      .section-heading {
+        gap: 14px;
+        margin-bottom: 14px;
+      }
+
+      .section-heading-group {
+        gap: 8px;
+      }
+
+      .section-number {
+        font-size: 9px;
+      }
+
+      .section-title {
+        font-size: 19px;
+      }
+
+      .news-card {
+        padding: 6px 20px;
+        border-radius: 14px;
+      }
+
+      .news-line {
+        grid-template-columns: 72px 1fr;
+        gap: 14px;
+        padding: 11px 0 11px 15px;
+      }
+
+      .news-line::before {
+        top: 18px;
+        width: 6px;
+        height: 6px;
+      }
+
+      .news-when {
+        font-size: 9px;
+      }
+
+      .news-what {
+        font-size: 12px;
+      }
+
+      .news-what .acc {
+        font-size: 8px;
+      }
+
+      .award-icon {
+        width: 12px;
+        height: 12px;
+      }
+
+      .publications-list {
+        gap: 14px;
+      }
+
+      .paper {
+        grid-template-columns: 190px minmax(0, 1fr);
+        gap: 20px;
+        padding: 14px;
+        border-radius: 16px;
+      }
+
+      .paper-thumb-wrap {
+        min-height: 128px;
+        border-radius: 10px;
+      }
+
+      .paper-thumb-wrap img {
+        padding: 6px;
+      }
+
+      .paper-body {
+        padding: 2px 4px 2px 0;
+      }
+
+      .p-title {
+        font-size: 14px;
+        line-height: 1.35;
+      }
+
+      .p-authors {
+        margin-top: 6px;
+        font-size: 10.5px;
+        line-height: 1.5;
+      }
+
+      .p-venue {
+        margin-top: 3px;
+        font-size: 10px;
+      }
+
+      .p-links {
+        gap: 6px;
+        margin-top: 11px;
+      }
+
+      .p-links a {
+        gap: 4px;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 8px;
+      }
+
+      .p-links a::after {
+        font-size: 8px;
+      }
+
+      .foot {
+        margin-top: 32px;
+        padding-top: 16px;
+        font-size: 8px;
+      }
+    }
+
     @media (max-width: 800px) {
       .site-shell {
         width: min(calc(100% - 32px), 680px);
