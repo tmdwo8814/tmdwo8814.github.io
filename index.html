@@ -407,20 +407,6 @@
       padding: 4px 8px 4px 0;
     }
 
-    .venue-badge {
-      align-self: flex-start;
-      margin-bottom: 10px;
-      padding: 4px 9px;
-      color: var(--accent-dark);
-      background: var(--accent-wash);
-      border-radius: 6px;
-      font-family: var(--mono);
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
     .p-title {
       font-size: 17px;
       font-weight: 650;
@@ -455,6 +441,18 @@
 
     .p-authors a:hover {
       color: var(--accent-dark);
+    }
+
+    .p-venue {
+      margin-top: 5px;
+      color: var(--text-soft);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .p-venue strong {
+      color: var(--accent-dark);
+      font-weight: 700;
     }
 
     .p-links {
@@ -741,7 +739,6 @@
             <img src="images/ReSet/ReSet.jpg" alt="ReSet paper preview">
           </a>
           <div class="paper-body">
-            <span class="venue-badge">ECCV 2026</span>
             <h3 class="p-title">
               <a href="https://arxiv.org/pdf/2606.23069">Rethinking Prototype-based Similarity Learning for Few-Shot Object Detection</a>
             </h3>
@@ -752,6 +749,7 @@
               <a href="https://spoiuy3.github.io/">SuYeon Kim</a>,
               <a href="https://myeongahcho.netlify.app/">MyeongAh Cho</a>
             </div>
+            <p class="p-venue"><em>European Conference on Computer Vision (<strong>ECCV</strong>), 2026</em></p>
             <div class="p-links">
               <a href="https://arxiv.org/pdf/2606.23069">arXiv</a>
               <a href="https://github.com/VisualScienceLab-KHU/ReSet">code</a>
@@ -765,7 +763,6 @@
             <img src="images/plugtrack/plugtrack.jpg" alt="PlugTrack paper preview">
           </a>
           <div class="paper-body">
-            <span class="venue-badge">AAAI 2026</span>
             <h3 class="p-title">
               <a href="https://ojs.aaai.org/index.php/AAAI/article/view/37491">PlugTrack: Multi-Perceptive Motion Analysis for Adaptive Fusion in Multi-Object Tracking</a>
             </h3>
@@ -774,6 +771,7 @@
               <a href="https://my.surfit.io/w/1720083748">SeungJoon Lee</a>,
               <a href="https://myeongahcho.netlify.app/">MyeongAh Cho</a>
             </div>
+            <p class="p-venue"><em>AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>), 2026</em></p>
             <div class="p-links">
               <a href="https://arxiv.org/abs/2511.13105">arXiv</a>
               <a href="https://github.com/VisualScienceLab-KHU/PlugTrack">code</a>
@@ -784,9 +782,6 @@
       </div>
     </section>
 
-    <footer class="foot">
-      Based on <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>
-    </footer>
   </main>
 </body>
 </html>
