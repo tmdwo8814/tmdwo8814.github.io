@@ -237,18 +237,11 @@
       background: var(--gray-5);
       border-radius: 4px;
     }
-    .paper-thumb-wrap img,
-    .paper-thumb-wrap video {
+    .paper-thumb-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
-    }
-    .paper-thumb-wrap .vid-layer {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      transition: opacity 0.35s ease;
     }
 
     .paper-body {
@@ -450,15 +443,38 @@
         <p class="section-label">Publications</p>
       </div>
 
-      <!-- PlugTrack -->
-      <div class="paper" onmouseover="plugtrack_start()" onmouseout="plugtrack_stop()">
+      <!-- ReSet -->
+      <div class="paper">
         <div class="paper-thumb-wrap">
-          <div class="vid-layer" id="plugtrack_image">
-            <video muted autoplay loop playsinline style="width:100%;height:100%;object-fit:cover;">
-              <source src="images/plugtrack/dancetrack0004-Trim.mp4" type="video/mp4">
-            </video>
+          <img src="images/ReSet/ReSet.pdf" alt="ReSet">
+        </div>
+        <div class="paper-body">
+          <div class="p-title">
+            <a href="https://arxiv.org/pdf/2606.23069">
+              Rethinking Prototype-based Similarity Learning for Few-Shot Object Detection
+            </a>
           </div>
-          <img src="images/plugtrack/DanceTrack_0004_530frame.jpg" alt="PlugTrack">
+          <div class="p-authors">
+            <a href="https://heokunho.github.io/">KunHo Heo</a>,
+            <span class="me">Seungjae Kim</span>,
+            <a href="https://wklee0607.github.io/">Wongyu Lee</a>,
+            <a href="https://spoiuy3.github.io/">SuYeon Kim</a>,
+            <a href="https://myeongahcho.netlify.app/">MyeongAh Cho</a>
+          </div>
+          <div class="p-venue"><strong>ECCV</strong>, 2026</div>
+          <div class="p-links">
+            <a href="https://arxiv.org/pdf/2606.23069">arXiv</a>
+            <a href="https://github.com/VisualScienceLab-KHU/ReSet">code</a>
+            <a href="https://visualsciencelab-khu.github.io/ReSet_project/">project page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PlugTrack -->
+      <div class="paper">
+        <div class="paper-thumb-wrap">
+          <img src="images/plugtrack/plugtrack.pdf" alt="PlugTrack">
         </div>
         <div class="paper-body">
           <div class="p-title">
@@ -477,10 +493,6 @@
             <a href="https://github.com/VisualScienceLab-KHU/PlugTrack">code</a>
             <a href="https://visualsciencelab-khu.github.io/PlugTrack_project/">project page</a>
           </div>
-          <p class="p-desc">
-            A plug-and-play motion prediction framework that adaptively fuses Kalman filter
-            and <strong>any</strong> data-driven motion predictors for robust multi-object tracking.
-          </p>
         </div>
       </div>
     </div>
@@ -493,14 +505,5 @@
 
   </td></tr></tbody></table>
 
-  <script>
-    function plugtrack_start() {
-      document.getElementById('plugtrack_image').style.opacity = "1";
-    }
-    function plugtrack_stop() {
-      document.getElementById('plugtrack_image').style.opacity = "0";
-    }
-    plugtrack_stop();
-  </script>
 </body>
 </html>
